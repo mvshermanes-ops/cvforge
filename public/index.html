@@ -5,9 +5,28 @@
 <meta name="description" content="Build a professional CV in minutes. Fill in your details, preview it live and print it as a PDF.">
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f7fb;color:#172033}header{height:70px;background:#fff;border-bottom:1px solid #e6e9f0;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;position:sticky;top:0;z-index:5}.logo{font-weight:800;font-size:21px}.logo b{display:inline-grid;place-items:center;background:#5b5bf7;color:white;border-radius:9px;width:34px;height:34px;margin-right:8px}.navbtn,.primary{background:#5b5bf7;color:#fff;border:0;border-radius:10px;padding:11px 17px;text-decoration:none;font-weight:700;cursor:pointer}.hero{padding:85px 8vw;display:flex;align-items:center;gap:70px;background:linear-gradient(135deg,#fafaff,#eef0ff);min-height:560px}.hero>div{max-width:650px}.eyebrow{font-size:11px;letter-spacing:2px;color:#5b5bf7;font-weight:800}.hero h1{font-size:clamp(48px,6vw,78px);line-height:.98;letter-spacing:-3px;margin:14px 0 22px}.hero h1 span{color:#5b5bf7}.hero p{font-size:18px;line-height:1.65;color:#626b7b}.checks{color:#727b8a;font-size:13px;margin-top:18px}.mock{background:white;border:1px solid #e3e6ed;border-radius:20px;padding:25px;box-shadow:0 25px 70px #17203320;min-width:330px;transform:rotate(2deg)}.paper{border:1px solid #eee;padding:28px;min-height:300px}.paper h2{margin:0 0 4px}.paper hr{border:0;border-top:3px solid #5b5bf7;margin:20px 0}.bar{height:9px;background:#e8ebf1;border-radius:8px;margin:13px 0}.builder{max-width:1450px;margin:auto;padding:65px 5vw}.heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.heading h2{font-size:34px;margin:5px 0}.workspace{display:grid;grid-template-columns:380px 1fr;gap:28px}.form{background:white;border:1px solid #e2e6ee;border-radius:15px;padding:20px}.tabs{display:flex;gap:5px;overflow:auto;margin-bottom:12px}.tab{border:0;padding:9px 11px;border-radius:8px;background:#eef1f6;color:#687184;font-weight:700;cursor:pointer;white-space:nowrap}.tab.active{background:#5b5bf7;color:white}.section{display:none}.section.active{display:block}label{display:block;font-size:13px;font-weight:700;color:#4d5667;margin:13px 0}input,textarea,select{width:100%;margin-top:6px;border:1px solid #dfe3eb;border-radius:9px;padding:10px;font:inherit;outline:none}input:focus,textarea:focus,select:focus{border-color:#7777ff}.two{display:grid;grid-template-columns:1fr 1fr;gap:9px}.preview-label{font-size:11px;letter-spacing:1.5px;color:#8991a0;font-weight:800;margin-bottom:9px}.cv{background:#fff;max-width:820px;margin:auto;min-height:1050px;padding:58px 65px;box-shadow:0 15px 45px #17203318}.cv h1{font-size:40px;margin:0}.cv h3{color:#5b5bf7;font-weight:500;margin:5px 0}.contact{font-size:12px;color:#707888;border-bottom:1px solid #e1e4ea;padding:15px 0 20px}.cv section{margin-top:28px}.cv section h2{font-size:11px;letter-spacing:1.6px;color:#5b5bf7}.cv p{font-size:13px;line-height:1.65;color:#505866;white-space:pre-line}.item{font-size:13px}.itemtop{display:flex;justify-content:space-between}.itemtop span{color:#818997;font-size:11px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{background:#f0f2f7;padding:7px 10px;border-radius:7px;font-size:11px}.cv.modern{border-top:8px solid #5b5bf7}.cv.modern h1{color:#5b5bf7}.cv.minimal{box-shadow:none;border:1px solid #e2e5eb}.cv.minimal section h2{color:#202634}footer{text-align:center;padding:35px;color:#8991a0;font-size:13px}@media(max-width:900px){.hero{padding:60px 6vw;flex-direction:column;align-items:flex-start}.mock{transform:none;width:100%}.workspace{grid-template-columns:1fr}.heading{align-items:flex-start;gap:15px;flex-direction:column}.cv{padding:35px 28px}}@media print{header,.hero,.heading,.form,.preview-label,footer{display:none!important}.builder{padding:0}.workspace{display:block}.cv{box-shadow:none;max-width:none}}
+
+.pro-banner{margin:0 5vw 55px;background:#171b2d;color:#fff;border-radius:22px;padding:34px 38px;display:flex;align-items:center;justify-content:space-between;gap:25px;box-shadow:0 18px 45px #171b2d22}
+.pro-banner h3{margin:6px 0 8px;font-size:25px}.pro-banner p{margin:0;color:#bfc5d7;line-height:1.5}.pro-banner .eyebrow{color:#9fa2ff}
+.pro-cta{background:#fff;color:#171b2d;border:0;border-radius:11px;padding:13px 20px;font-weight:800;cursor:pointer;white-space:nowrap}
+.pricing{padding:15px 5vw 75px;max-width:1450px;margin:auto}.pricing-head{text-align:center;margin-bottom:32px}.pricing-head h2{font-size:38px;margin:8px 0}.pricing-head p{color:#707888;margin:0}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:auto}.plan{background:#fff;border:1px solid #e1e5ed;border-radius:18px;padding:28px;position:relative}.plan.featured{border:2px solid #5b5bf7;box-shadow:0 18px 50px #5b5bf722;transform:translateY(-6px)}.badge{position:absolute;right:18px;top:18px;background:#5b5bf7;color:#fff;font-size:10px;font-weight:800;padding:6px 9px;border-radius:20px}.plan h3{margin:0;font-size:21px}.price{font-size:38px;font-weight:900;margin:17px 0 4px}.price small{font-size:13px;color:#7d8492;font-weight:500}.plan-desc{color:#737c8c;font-size:13px;min-height:38px}.plan ul{padding:0;list-style:none;margin:22px 0}.plan li{font-size:13px;padding:8px 0;color:#4d5667}.plan li:before{content:"✓";color:#5b5bf7;font-weight:900;margin-right:8px}.plan button{width:100%;padding:12px;border-radius:10px;border:1px solid #dce0e8;background:#fff;font-weight:800;cursor:pointer}.plan.featured button{background:#5b5bf7;color:#fff;border-color:#5b5bf7}
+.pro-features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:25px 0 5px}.pro-feature{background:#fff;border:1px solid #e2e6ee;border-radius:13px;padding:17px}.pro-feature strong{display:block;font-size:13px;margin-bottom:5px}.pro-feature span{font-size:11px;color:#7b8492;line-height:1.45}
+.upgrade-note{margin-top:12px;font-size:11px;color:#8a91a0;text-align:center}
+@media(max-width:900px){.plans{grid-template-columns:1fr}.plan.featured{transform:none}.pro-banner{margin:0 6vw 45px;padding:25px;flex-direction:column;align-items:flex-start}.pro-features{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pro-features{grid-template-columns:1fr}.pricing-head h2{font-size:30px}}
 </style></head><body>
-<header><div class="logo"><b>C</b>CVForge</div><a class="navbtn" href="#builder">Build my CV</a></header>
+<header><div class="logo"><b>C</b>CVForge</div><div style="display:flex;gap:8px;align-items:center"><a class="navbtn" href="#pricing" style="background:#171b2d">Pro</a><a class="navbtn" href="#builder">Build my CV</a></div></header>
 <section class="hero"><div><div class="eyebrow">FREE CV BUILDER</div><h1>Build a CV that<br><span>gets noticed.</span></h1><p>Create a clean, professional CV in minutes. Enter your information and watch your CV update live.</p><a class="primary" href="#builder">Create my CV →</a><div class="checks">✓ No design skills required &nbsp; ✓ Works on phone & PC</div></div><div class="mock"><div class="paper"><h2>Jordan Daniels</h2><small>IT Support Technician</small><hr><div class="bar"></div><div class="bar" style="width:75%"></div><div class="bar" style="width:88%"></div><br><div class="bar"></div><div class="bar" style="width:70%"></div></div></div></section>
+
+<section class="pro-banner">
+  <div>
+    <div class="eyebrow">CVFORGE PRO</div>
+    <h3>Let CVForge do the hard work.</h3>
+    <p>AI writing, ATS optimization, job-specific CVs, cover letters and premium templates — all in one place.</p>
+  </div>
+  <button class="pro-cta" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">See Pro plans →</button>
+</section>
 <main id="builder" class="builder"><div class="heading"><div><div class="eyebrow">CV BUILDER</div><h2>Your information</h2></div><button class="navbtn" onclick="window.print()">Download / Print PDF</button></div>
 <div class="workspace"><aside class="form"><div class="tabs"><button class="tab active" data-s="personal">Personal</button><button class="tab" data-s="experience">Experience</button><button class="tab" data-s="education">Education</button><button class="tab" data-s="skills">Skills</button></div>
 <div class="section active" id="personal"><label>Full name<input id="name" placeholder="e.g. Jordan Daniels"></label><label>Professional title<input id="title" placeholder="e.g. IT Support Technician"></label><div class="two"><label>Email<input id="email" placeholder="you@email.com"></label><label>Phone<input id="phone" placeholder="+27 71 234 5678"></label></div><label>Location<input id="location" placeholder="City, Province"></label><label>Professional summary<textarea id="summary" rows="6" placeholder="Tell employers who you are and what you bring..."></textarea></label></div>
@@ -16,10 +35,56 @@
 <div class="section" id="skills"><label>Skills <small>comma separated</small><textarea id="skills" rows="5" placeholder="Communication, Problem solving, Teamwork"></textarea></label><label>Languages<input id="languages" placeholder="English, Afrikaans"></label><label>Template<select id="template"><option value="classic">Classic</option><option value="modern">Modern</option><option value="minimal">Minimal</option></select></label></div></aside>
 <section><div class="preview-label">LIVE PREVIEW</div><article id="cv" class="cv classic"><h1 id="pname">Your Name</h1><h3 id="ptitle">Professional Title</h3><div class="contact" id="pcontact">email@example.com · +27 00 000 0000 · City, Province</div>
 <section><h2>PROFILE</h2><p id="psummary">Your professional summary will appear here.</p></section><section><h2>EXPERIENCE</h2><div class="item"><div class="itemtop"><strong id="pjob">Job Title</strong><span id="pdates">2025 — Present</span></div><em id="pcompany">Company Name</em><p id="presponsibilities">Your responsibilities will appear here.</p></div></section>
-<section><h2>EDUCATION</h2><div class="item"><div class="itemtop"><strong id="pqualification">Qualification</strong><span id="pedudates">2021 — 2025</span></div><em id="pschool">Institution</em></div></section><section><h2>SKILLS</h2><div id="pskills" class="chips"><span>Communication</span><span>Problem solving</span><span>Teamwork</span></div></section><section><h2>LANGUAGES</h2><p id="planguages">English</p></section></article></section></div></main><footer>CVForge · Build your future, one CV at a time.</footer>
+<section><h2>EDUCATION</h2><div class="item"><div class="itemtop"><strong id="pqualification">Qualification</strong><span id="pedudates">2021 — 2025</span></div><em id="pschool">Institution</em></div></section><section><h2>SKILLS</h2><div id="pskills" class="chips"><span>Communication</span><span>Problem solving</span><span>Teamwork</span></div></section><section><h2>LANGUAGES</h2><p id="planguages">English</p></section></article></section></div></main>
+<section id="pricing" class="pricing">
+  <div class="pricing-head">
+    <div class="eyebrow">UPGRADE WHEN YOU'RE READY</div>
+    <h2>Build it yourself — or let Pro help.</h2>
+    <p>Free gives you the essentials. Pro is built to make getting job-ready faster and easier.</p>
+  </div>
+  <div class="plans">
+    <article class="plan">
+      <h3>Free</h3><div class="price">R0 <small>forever</small></div>
+      <div class="plan-desc">Everything you need to create a basic professional CV.</div>
+      <ul>
+        <li>CV builder & live preview</li><li>Basic templates</li><li>Education & experience sections</li><li>Basic PDF / print export</li>
+      </ul>
+      <button onclick="document.getElementById('builder').scrollIntoView({behavior:'smooth'})">Build for free</button>
+    </article>
+    <article class="plan">
+      <h3>Pro Monthly</h3><div class="price">R79 <small>/ month</small></div>
+      <div class="plan-desc">Full Pro access while you're actively applying for jobs.</div>
+      <ul>
+        <li>Everything in Free</li><li>AI CV writing & rewriting</li><li>ATS score & optimization</li><li>Job-specific CV tailoring</li><li>AI cover letters</li><li>Premium templates</li>
+      </ul>
+      <button onclick="showProMessage('Monthly Pro')">Choose monthly</button>
+    </article>
+    <article class="plan featured">
+      <div class="badge">BEST VALUE</div>
+      <h3>Pro Lifetime</h3><div class="price">R500 <small>once-off</small></div>
+      <div class="plan-desc">Pay once and keep Pro forever. No renewals.</div>
+      <ul>
+        <li>Everything in Free</li><li>AI CV writing & rewriting</li><li>ATS score & optimization</li><li>Job-specific CV tailoring</li><li>AI cover letters</li><li>Premium templates</li><li>Unlimited CVs & exports</li>
+      </ul>
+      <button onclick="showProMessage('Lifetime Pro')">Get Lifetime Pro</button>
+    </article>
+  </div>
+  <div class="pro-features">
+    <div class="pro-feature"><strong>✨ AI CV Writer</strong><span>Turn rough notes into polished professional CV content.</span></div>
+    <div class="pro-feature"><strong>🎯 Job Optimizer</strong><span>Paste a job advert and tailor your CV to the role.</span></div>
+    <div class="pro-feature"><strong>📊 ATS Checker</strong><span>Find missing keywords and improve your CV's compatibility.</span></div>
+    <div class="pro-feature"><strong>✉️ Cover Letters</strong><span>Generate a tailored cover letter from your CV and job.</span></div>
+  </div>
+  <div class="upgrade-note">Lifetime pricing is planned at R500 once-off. Payment checkout will be connected before launch.</div>
+</section>
+<footer>CVForge · Build your future, one CV at a time.</footer>
 <script>
 const $=id=>document.getElementById(id),v=id=>$(id).value.trim();
 function update(){ $("pname").textContent=v("name")||"Your Name";$("ptitle").textContent=v("title")||"Professional Title";$("pcontact").textContent=[v("email")||"email@example.com",v("phone")||"+27 00 000 0000",v("location")||"City, Province"].join(" · ");$("psummary").textContent=v("summary")||"Your professional summary will appear here.";$("pjob").textContent=v("job")||"Job Title";$("pcompany").textContent=v("company")||"Company Name";$("pdates").textContent=(v("jobstart")||"2025")+" — "+(v("jobend")||"Present");$("presponsibilities").textContent=v("responsibilities")||"Your responsibilities will appear here.";$("pqualification").textContent=v("qualification")||"Qualification";$("pschool").textContent=v("school")||"Institution";$("pedudates").textContent=(v("edustart")||"2021")+" — "+(v("eduend")||"2025");$("planguages").textContent=v("languages")||"English";let ss=(v("skills")||"Communication, Problem solving, Teamwork").split(",").map(x=>x.trim()).filter(Boolean);$("pskills").innerHTML=ss.map(x=>"<span>"+x.replace(/[&<>]/g,"")+"</span>").join("");$("cv").className="cv "+v("template")}
 document.querySelectorAll("input,textarea,select").forEach(e=>e.addEventListener("input",update));
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));document.querySelectorAll(".section").forEach(x=>x.classList.remove("active"));b.classList.add("active");$(b.dataset.s).classList.add("active")});update();
+
+function showProMessage(plan){
+  alert(plan+" checkout is being prepared. The Pro experience is already designed, and payment will be connected before launch.");
+}
 </script></body></html>
